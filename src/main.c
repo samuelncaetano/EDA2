@@ -21,16 +21,16 @@ int main(void)
    /* ── Vertices ── */
 
    /* ── Usuarios ── */
-   int u1 = adicionar_vertice(&g, "Usuario 1", USUARIO);
-   int u2 = adicionar_vertice(&g, "Usuario 2", USUARIO);
-   int u3 = adicionar_vertice(&g, "Usuario 3", USUARIO);
+   int u1 = adicionar_vertice(&g, "u1", USUARIO); /* Joao */
+   int u2 = adicionar_vertice(&g, "u2", USUARIO); /* Maria */
+   int u3 = adicionar_vertice(&g, "u3", USUARIO); /* Pedro */
 
    /* ── Livros ── */
-   int t1 = adicionar_vertice(&g, "Dom Casmurro", TEXTO);
-   int t2 = adicionar_vertice(&g, "Memorias Postumas de Bras Cubas", TEXTO);
-   int t3 = adicionar_vertice(&g, "Romeu e Julieta", TEXTO);
-   int t4 = adicionar_vertice(&g, "A Ilha do Tesouro", TEXTO);
-   int t5 = adicionar_vertice(&g, "O Conde de Monte Cristo", TEXTO);
+   int t1 = adicionar_vertice(&g, "t1", TEXTO); /* Dom Casmurro */
+   int t2 = adicionar_vertice(&g, "t2", TEXTO); /* Memorias Postumas de Bras Cubas */
+   int t3 = adicionar_vertice(&g, "t3", TEXTO); /* Romeu e Julieta */
+   int t4 = adicionar_vertice(&g, "t4", TEXTO); /* A Ilha do Tesouro */
+   int t5 = adicionar_vertice(&g, "t5", TEXTO); /* O Conde de Monte Cristo */
 
    /* ── Generos ── */
    int fi = adicionar_vertice(&g, "ficcao", GENERO);
@@ -57,18 +57,21 @@ int main(void)
                     "a culpa cercam o amor enquanto a morte se aproxima. a tragedia revela "
                     "o destino e o sofrimento de um coracao dividido entre o amor e a "
                     "perda. paixao traicao e morte.");
+
    /* Romeu e Julieta — amor/tragedia */
    definir_conteudo(&g, t3,
                     "o amor proibido e a paixao ardente terminam em tragedia. a traicao do "
                     "destino separa o casal e o ciume alimenta o odio. o amor verdadeiro "
                     "encontra a morte e o coracao mergulha no sofrimento. uma paixao eterna "
                     "desfeita pela tragedia e pela morte.");
+
    /* A Ilha do Tesouro — aventura pura */
    definir_conteudo(&g, t4,
                     "uma aventura pelo mar em busca de um tesouro perdido. a viagem "
                     "enfrenta o perigo a batalha e a coragem. o heroi vence o inimigo "
                     "supera o perigo e conquista o tesouro. aventura coragem e perigo no "
                     "mar em uma viagem de batalha.");
+
    /* O Conde de Monte Cristo — vinganca + amor (ponte) */
    definir_conteudo(&g, t5,
                     "uma aventura de vinganca nascida da traicao e do amor perdido. a "
